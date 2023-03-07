@@ -1,13 +1,18 @@
 {
   "name": "@nosaid/externals",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "vite-build": "tsc && vite build",
     "build": "bash ./scripts/build.sh",
     "preview": "vite preview"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@types/node": "^18.14.6",
     "@types/react-syntax-highlighter": "^15.5.6",
