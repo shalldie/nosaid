@@ -1,0 +1,14 @@
+{
+  "name": "nosaid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "一些工具包",
+  "scripts": {
+    "build": "pnpm -r build",
+    "clean": "rm -rf node_modules **/*/node_modules"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
+}
