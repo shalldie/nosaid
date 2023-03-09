@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import theme from 'react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus';
 
@@ -25,4 +27,9 @@ SyntaxHighlighter.registerLanguage('json', json);
 SyntaxHighlighter.registerLanguage('nginx', nginx);
 SyntaxHighlighter.registerLanguage('yaml', yaml);
 
-export { SyntaxHighlighter, theme };
+export default function SyntaxHighlighterPlus(props: any) {
+    return React.createElement(SyntaxHighlighter, {
+        style: theme,
+        ...props
+    });
+}

@@ -16,7 +16,7 @@ export default defineConfig({
                 const kebabName = entryName.replace(/[A-Z]/g, g0 => '-' + g0.toLowerCase()).replace(/^-/, '');
                 return `${kebabName}.${format}.js`;
             },
-            formats: ['umd']
+            formats: ['es', 'umd']
         },
         rollupOptions: {
             // 确保外部化处理那些你不想打包进库的依赖
